@@ -2,13 +2,13 @@
 
 body {
     background-color: black;
-    font-family: 'Hanalei Fill', cursive;
+    font-family: 'Lato', sans-serif;
 }
 
 #header {
     max-width: 1200px;
     margin: 0 auto;
-    height: 100px;
+    height: 60px;
     width: 100%;
     position: fixed;
     top: 0px;
@@ -36,6 +36,7 @@ img {
     display: none;
     font-size: 2em;
     float: right;
+    margin-right: 15px;
 }
 
 #menu nav {
@@ -118,8 +119,9 @@ img {
 
 .section h2 {
     background-color: white;
+    font-family: 'Hanalei Fill', cursive;
     padding: 5px;
-    font-size: 2em;
+    font-size: 3em;
     text-transform: uppercase;
     text-align: center;
 }
@@ -128,15 +130,29 @@ img {
     background-color: rgb(255,255,255, 0.7);
     background-color: rgba(255,255,255, 0.7);
     padding: 10px;
+    font-size: 1.5em;
     border-radius: 20px;
     margin: 0 10px;
 }
 
 .section p {
     background-color: rgba(255,255,255, 0.7);
+    font-size: 1.5em;
     padding: 10px;
     border-radius: 20px;
     margin: 0 10px;
+}
+
+.footer {
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-align: center;
+    height: 70px;
+}
+
+.fixPoint {
+    background-attachment: fixed;
 }
 
 @media screen and (max-width: 925px){
@@ -144,7 +160,7 @@ img {
         display: block;
     }
     #menu nav {
-        /* display: none;*/
+        display: none;
         width: 100%;
     }
     #menu nav ul li {
@@ -153,6 +169,17 @@ img {
     .navicon-img {
         width: 60%;
         height: 70%;
+    }
+    .footer {
+        font-size: 75%;
+    }
+
+    .section article {
+        font-size: 100%;
+    }
+
+    .section p {
+        font-size: 100%;
     }
 }
 

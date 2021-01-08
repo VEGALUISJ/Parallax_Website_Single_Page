@@ -7,6 +7,12 @@
         <meta name="viewport" content="width=divice-width, initial-scale=1">
         <meta name="author" content="Discoveryvip.com">
         <title>Parallax_COD Cold War</title>
+        <link 
+            rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+            crossorigin="anonymous"
+        >
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -14,9 +20,9 @@
         <header id="header">
             <div id="menu">
                 <div class="navicon">
-                    ICON
+                    <i class="fa fa-bars"></i>
                 </div>
-                <nav>
+                <nav class="nav">
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -31,26 +37,25 @@
 
             <section id="home" class="section">
                 <h2>Home</h2>
-                <article>Here is the content</article>
-                <article>Here is the content</article>
+                <article>Here goes the content what you want to show in your website</article>
             </section>
 
             <section id="about" class="section">
                 <h2>About</h2>
-                <p>This is a paragraph</p>
-                <p>This is a paragraph</p>
-                <p>This is a paragraph</p>
-                <p>This is a paragraph</p>
-                <p>This is a paragraph</p>
+                <p>
+                    Full Stack Developer. MERN (Mongo, Express, React, Node) 
+                    enthusiastic. Passionate about learning, and about 
+                    developing new skills. Big fan of video game develop
+                </p>
             </section>
 
             <section id="services" class="section">
                 <h2>Services</h2>
-                <p>This is a paragraph</p>
-                <p>This is a paragraph</p>
-                <p>This is a paragraph</p>
-                <p>This is a paragraph</p>
-                <p>This is a paragraph</p>
+                <p>Create WebSites using a simple but Cool design.</p>
+                <p>I work with Front End and some Back End Development.</p>
+                <p>The Technologies that I applied here are HTML, CSS, Javascript, and JQuery.</p>
+                <p>I'm always learning every day new technologies, libraries, and Frameworks..</p>
+                <p>I can build any website with interactive behavior by request just shoot and make it happen.</p>
             </section>
 
             <section id="portfolio" class="section">
@@ -67,11 +72,61 @@
 
             <section id="contact" class="section">
                 <h2>Contact</h2>
-                <p>Contact information goes here</p>
+                <p>You Can contact me Clicking over my user name that i use on LinkedIn</p>
+                <p>My LinkedIn name is: <a href="https://www.linkedin.com/in/vegaluisj/" add target="_blank">VEGALUISJ</a></p>
             </section>
+
+            <footer class="footer">
+                <h4>All rights reserved © 2021    |  
+                    Designed & Built By Jose Vega  |  
+                    Design: Udemy Instructor @Laurence Svekis</h4>
+            </footer>
 
         </div>
     </body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.navicon').click(function (){
+                $('.nav').slideToggle();
+            });
+
+            $(window).bind('resize', function() {
+                if( $('.navicon').css('display') == "none") {
+                    $('.nav').show();
+                }
+                else {
+                    $('.nav').hide();
+                }
+            })
+
+            $('nav li a').click(function (event) {
+                event.preventDefault();
+                var sectionId = $(this).attr('href');
+                var fromTop = $(sectionId).offset().top;
+                $('html, body').animate({
+                    scrollTop: fromTop
+                }, 1000)
+
+                if($('.navicon').css('display') == 'block'){
+                    $('.nav').slideUp();
+            }
+            })
+
+            $(window).scroll(function(){
+                $('.section').each(function(){
+                var fromTop = $(this).offset().top;
+                if (window.scrollY >= (fromTop + 60)) {
+                    $(this).addClass('fixPoint');
+                } else {
+                    $(this).removeClass('fixPoint');
+                }
+                console.log(fromTop)
+                })
+            })
+            
+
+        })
+    </script>
 </html>
