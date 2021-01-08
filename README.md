@@ -3,7 +3,7 @@
 
 This is a Project based on a Udemy Course, where i learned how to use parallax effect and scrolling animation using mainly a HTML, CSS, Javascript and JQuery. Is very simple page but is fully responsive with all screen sizes.
 
-![demo](https://gph.is/g/ajwNjeq)
+![demo](https://giphy.com/gifs/yfQ27aikZmVzuBz1Gd/html5)
 
 ### Technologies used:
 - HTML, CSS, Javascript and JQuery.
