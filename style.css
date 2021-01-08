@@ -1,24 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+
 body {
-    background-color: whitesmoke;
-}
-
-a{
-
+    background-color: black;
+    font-family: 'Hanalei Fill', cursive;
 }
 
 #header {
-    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
     width: 100%;
     position: fixed;
-    top: 0%;
+    top: 0px;
+    right: 0px;
     left: 0px;
     border: 1px solid black;
     background-color: #ddd;
 }
 
-#menu.navicon {
+img {
+    max-width: 100%;
+}
+
+.navicon-img {
+    width: 50%;
+    height: 80%;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#menu .navicon {
     display: none;
     font-size: 2em;
+    float: right;
 }
 
 #menu nav {
@@ -34,6 +51,109 @@ a{
     float: left;
     list-style-type: none;
     border: 1px solid black;
+}
+
+#menu nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #222;
+    color: #ddd;
+}
+
+#menu nav li:last-child {
+    margin-right: 20px;
+}
+
+#menu nav li a:hover {
+    background-color: #000;
+    color: whitesmoke;
+}
+
+.section {
+    height: 100vh;
+    min-height: 800px;
+    overflow: hidden;
+    padding-top: 80px;
+    /*position: relative;*/
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center center;
+}
+
+#home {
+    background-image: url(https://images.alphacoders.com/109/thumb-1920-1097309.png);
+    background-color: chartreuse;
+}
+
+#about {
+    background-image: url(https://cdn.mos.cms.futurecdn.net/8WRY5PUjuJBUbHFzZMxVVR.jpg);
+    background-color: darkmagenta;
+}
+
+#services {
+    background-image: url(https://images.hdqwalls.com/wallpapers/call-of-duty-black-ops-cold-war-4k-ki.jpg);
+    background-color: darkslateblue;
+}
+
+#portfolio {
+    background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/bocw/BOCW-LAUNCH-PREMISE-TOUT.jpg);
+    background-color: darkorchid;
+}
+
+#portfolio ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#portfolio ul li {
+    display: inline;
+}
+
+#contact {
+    background-image: url(https://charlieintel.com/wp-content/uploads/2020/10/BOCW-PC-Trailer-019.jpg);
+    background-color: lightgoldenrodyellow 
+}
+
+.section h2 {
+    background-color: white;
+    padding: 5px;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section article {
+    background-color: rgb(255,255,255, 0.7);
+    background-color: rgba(255,255,255, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.section p {
+    background-color: rgba(255,255,255, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 925px){
+    #menu .navicon {
+        display: block;
+    }
+    #menu nav {
+        /* display: none;*/
+        width: 100%;
+    }
+    #menu nav ul li {
+        width: 100%;
+    }
+    .navicon-img {
+        width: 60%;
+        height: 70%;
+    }
 }
 
 /*
