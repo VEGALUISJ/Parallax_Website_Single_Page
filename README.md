@@ -1,5 +1,5 @@
 # Website Development Build single Page Website Parallax site
-# Purpose
+# Purpose:
 
 This is a Project based on a Udemy Course, where i learned how to use parallax effect and scrolling animation using mainly a HTML, CSS, Javascript and JQuery. Is very simple page but is fully responsive with all screen sizes
 
