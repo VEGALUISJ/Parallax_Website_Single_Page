@@ -13,3 +13,7 @@ This is a Project based on a Udemy Course, where i learned how to use parallax e
 great display showing the website with some animations that looks awesome.
 Parallax Effect and scrolling animation.
 Website with full responsive design.
+
+##### Future updates required:
+
+optimization on fixed position oin background oin mobile devices. Parallax effect is having issues.
