@@ -6,7 +6,7 @@ This is a Project based on a Udemy Course, where i learned how to use parallax e
 ![demo](https://media.giphy.com/media/yfQ27aikZmVzuBz1Gd/giphy-downsized.gif)
 
 ### Technologies used:
-- HTML, CSS, Javascript and JQuery.
+- HTML, CSS, Javascript and JQuery
 
 ##### Cool Features:
 
